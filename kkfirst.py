@@ -1,0 +1,1 @@
+print("its KK's life")
