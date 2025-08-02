@@ -11,5 +11,6 @@ def primenums(nums):
     x=sorted(set(c))
     return x
 
+
 n=primenums(20)
 print(n)
