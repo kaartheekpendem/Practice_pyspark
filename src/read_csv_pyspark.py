@@ -21,3 +21,6 @@ df = spark.createDataFrame(data, schema=schema)
 
 # Show few rows
 df.show(10, truncate=False)
+
+# LEFT SEMI join to extract data from left table data only which are matching from second table
+# Left anti join to extract data from left table data which do not have matching from second table

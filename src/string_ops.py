@@ -1,0 +1,50 @@
+a='karthikkeerthi'
+
+print(list(a))
+
+print(a[::-1])
+
+print(''.join(list(a)))
+
+print(''.join([i for i in list(a) if i !='k']))
+
+print(a.index('e',2))
+
+print(a.count('k'))
+
+print(a.endswith('i'))
+
+str = 'Hello World'
+
+str = list(str.split())
+m_str=[]
+for i in str:
+    m_str.append(i[::-1])
+
+
+print(" ".join(m_str))
+
+
+a=3
+b=[3,5,2]
+k=10
+
+def max_candies(prices, budget):
+    prices.sort()  # Sort prices ascending
+    count = 0
+    for price in prices:
+
+        while budget >= price:
+            print(budget)
+            budget -= price
+            count += 1
+    print(budget)
+    return count
+
+# Prices: apple, orange, banana
+prices = [4, 3, 8]
+budget = 10
+
+print("Maximum candies you can buy:", max_candies(prices, budget))
+
+

@@ -10,3 +10,5 @@ print(d)
 max_key = max(d,key=d.get)
 max_value = max(d.values())
 print(f'here it is {max_key}:{max_value}')
+
+print(min(d,key=d.get))
