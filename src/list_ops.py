@@ -28,4 +28,30 @@ lst = v+u
 print(sorted(set(lst))[::-1][1])
 
 
+#recursive list
+
+a= [1,[4,[6]]]
+
+def list_ops(l,d=1):
+    c=[]
+    for i in l:
+        if isinstance(i, int):
+            c.append(i*d)
+        elif isinstance(i,list):
+            c.append(list_ops(i,d+1))
+    return sum(c)
+
+b= list_ops(a)
+print(b)
+
+
+
+
+
+
+
+
+
+
+
 

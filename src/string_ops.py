@@ -1,5 +1,5 @@
 a='karthikkeerthi'
-
+"""
 print(list(a))
 
 print(a[::-1])
@@ -45,6 +45,13 @@ def max_candies(prices, budget):
 prices = [4, 3, 8]
 budget = 10
 
-print("Maximum candies you can buy:", max_candies(prices, budget))
+print("Maximum candies you can buy:", max_candies(prices, budget))"""
 
+# when I need to split a string into separate variable in a list
+print([i for i in a])
 
+for i in a:
+    if i =='a':
+        a=a.replace(i,'l')
+
+print(a)

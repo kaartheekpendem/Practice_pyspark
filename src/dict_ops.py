@@ -1,4 +1,4 @@
-a={'b':2,'c':3,'d':4}
+"""a={'b':2,'c':3,'d':4}
 
 print(a.keys())
 print(a.values())
@@ -13,3 +13,14 @@ print(dict(sorted(a.items())))
 
 for i,j in a.items():
     print(f"Here is key: {i} and here is value: {j}")
+
+"""
+
+import random
+
+n = [random.randint(100,200) for i in range(10)]
+c=[]
+for i in n:
+    if i<100:
+        c.append(i)
+print(c)
