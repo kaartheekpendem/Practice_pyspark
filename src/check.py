@@ -1,22 +1,21 @@
-"""from collections import defaultdict
+import random
 
-data = [('A', 10), ('B', 20), ('A', 15)]
+a= []
+for i in range(10):
+    c= random.randint(100,300)
+    a.append(c)
 
-agg = defaultdict(list)
-for key, value in data:
-    agg[key].append(value)
-
-# Sum per group
-group_sums = {k: sum(v) for k, v in agg.items()}
-print(group_sums)
+print(a)
 
 
-"""
+d=['100below','100to200','200above']
+b=[[],[],[]]
+f=dict(zip(d,b))
+print(f'here id {f}')
+c= {k:[] for k in d}
+print(c)
 
-a=[10,14,15]
-b=[]
-
-for i,j in enumerate(a):
-    if i%2 ==1:
-        b.append(j)
-print(b)
+for i in a:
+    if i<200:
+        f['100to200'].append(i)
+print(f)
