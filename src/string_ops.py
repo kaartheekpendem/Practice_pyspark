@@ -55,3 +55,22 @@ for i in a:
         a=a.replace(i,'l')
 
 print(a)
+
+
+
+a='kaartheek'
+print(a[0:1])
+
+c= 'i am here in virginia'
+
+print(c.find('virginia'))
+
+
+x = "Hello, World! Hello, Universe!"
+print(x.rfind('Hello'))
+
+x=x[:x.rfind('Hello')]+x[x.rfind('Hello'):].replace('Hello','karthik',1)
+print(x)
+
+
+print(list(a))

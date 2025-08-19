@@ -53,7 +53,12 @@ n = [a[random.randint(0,len(a)-1)] for i in range(5)]
 
 print(n)
 
+x=[3,4,5]
 
+a.append(x)
+a.extend(x)
+print(a)
+print(a)
 
 
 

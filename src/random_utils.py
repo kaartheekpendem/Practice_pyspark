@@ -5,8 +5,8 @@ print(items)
 
 # Sample 3 unique elements from a list
 print(random.sample(range(100), 3))"""
-
 """
+
 import random
 
 n = [random.randint(100,250) for _ in  range(10)]

@@ -61,3 +61,5 @@ ll.prepend(5)
 ll.display()       # Output: 5 -> 10 -> 20 -> None
 ll.delete(10)
 ll.display()       # Output: 5 -> 20 -> None
+
+
