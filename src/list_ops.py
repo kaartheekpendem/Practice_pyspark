@@ -44,6 +44,9 @@ def list_ops(l,d=1):
 b= list_ops(a)
 print(b)
 """
+
+
+"""
 import random
 a =[1,2,3,4,5,3,2,11,44,5,43,34,5]
 
@@ -59,6 +62,51 @@ a.append(x)
 a.extend(x)
 print(a)
 print(a)
+"""
+"""
+from itertools import combinations
+a =[-1,0,1,2,-1,-4,4,6,8,-9]
+t=8
+r=set()
+for i in range(1,len(a)+1):
+    for j in combinations(a,i):
+        print(j)
+        if sum(j) == t:
+            r.add(tuple(j))
+
+print(r)"""
+"""
+from collections import Counter, defaultdict, namedtuple, deque
+
+# Counter
+print(Counter('abracadabra'))  # {'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}
+
+# defaultdict
+dd = defaultdict(int)
+dd['missing'] += 1  # No KeyError
+print(dd['o'])
+
+# namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(3, 4)
+print(p.x, p.y)
+
+# deque
+dq = deque([1, 2, 3])
+dq.appendleft(0)
+dq.pop()"""
+
+from collections import defaultdict
+
+
+a=defaultdict(list)
+b=[('mom',50),('mom',45),('dad',50)]
+for i ,j in b:
+    a[i].append(j)
+
+print(a)
+
+
 
 
 

@@ -1,4 +1,4 @@
-import random
+"""import random
 
 a= []
 for i in range(10):
@@ -19,3 +19,16 @@ for i in a:
     if i<200:
         f['100to200'].append(i)
 print(f)
+
+
+s ='0'
+print(int(s.strip()))
+
+
+a='helloworldishere'
+
+if 'world' in a:
+    print('True')"""
+
+a=[1,1]
+print(len(a))

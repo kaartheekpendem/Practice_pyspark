@@ -25,7 +25,7 @@ for i in n:
         c.append(i)
 print(c)
 """
-
+"""
 import random
 a=[]
 for i in range(10):
@@ -43,4 +43,22 @@ for i in a:
         d['100to200'].append(i)
     else:
         d['200above'].append(i)
-print(d)
+print(d)"""
+
+a=[1,2,2,2,3,4,3,5,5,4,5,6,7,8,9,2,3,2,3,1]
+"""b={}
+for i in a:
+    if i in b:
+        b[i]+=1
+    else:
+        b[i]=1
+
+s= [(i,j) for i,j in b.items()]
+s=sorted(s,key=lambda x:x[1],reverse=True)[:3]
+print([i for i,j in s])"""
+
+a.pop(a[0])
+print(a)
+
+
+
