@@ -60,5 +60,9 @@ print([i for i,j in s])"""
 a.pop(a[0])
 print(a)
 
+a={'s':1,'h':4}
+b={'t':5,'h':3}
+print(a|b)
+
 
 

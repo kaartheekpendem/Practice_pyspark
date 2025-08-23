@@ -1,34 +1,3 @@
-"""import random
-
-a= []
-for i in range(10):
-    c= random.randint(100,300)
-    a.append(c)
-
-print(a)
-
-
-d=['100below','100to200','200above']
-b=[[],[],[]]
-f=dict(zip(d,b))
-print(f'here id {f}')
-c= {k:[] for k in d}
-print(c)
-
-for i in a:
-    if i<200:
-        f['100to200'].append(i)
-print(f)
-
-
-s ='0'
-print(int(s.strip()))
-
-
-a='helloworldishere'
-
-if 'world' in a:
-    print('True')"""
 from itertools import chain, product
 a=[[1,2,3],[3,4,5,5],[6,7,5,4]]
 m= list(chain.from_iterable(a))
@@ -65,7 +34,4 @@ for i , j in logs:
     lst[i].append(j)
 print({i:k for i,k in lst.items()})
 
-from collections import deque
-a=deque([1,2,3,4])
-a.appendleft(6)
-print(list(a))
+
