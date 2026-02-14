@@ -1,3 +1,15 @@
+a=[]
+for i,j in enumerate(range(10),0):
+    print(i,j)
+    a.append(j)
+
+print(a)
+b=a.extend([2,3])
+print(a)
+a.reverse()
+print(a)
+a.sort(reverse = True)
+print(sorted(a,reverse= True))
 """a =[1,2,3,4,5,3,2,11,44,5,43,34,5]
 x=sorted(a)
 print(x)
@@ -108,9 +120,48 @@ print(a)
 
 
 
+a='au'
+d=[]
+c=[i for i in a]
+print(c)
+x=[]
+if not c:
+    print(len(c))
+for i in range(len(c)):
+    if a[i] not in d:
+        d.append(a[i])
+        print(d)
+    else:
+        x.append(''.join(d))
+        print(f'x is here: {x}')
+        d=[a[i]]
+    x.append(''.join(d))
+print(x)
+if not x:
+    print(1)
+else:
+    print(len(max(x,key = len)))
 
 
 
+
+def minimum_sum_with_integer_mean(N,A):
+    S = sum(A)
+
+    # If already divisible, no need to add anything
+    if S % N == 0:
+        return S
+
+    # Otherwise, go to next multiple of N
+    print(S%N)
+    return S + (N - (S % N))
+
+
+c= minimum_sum_with_integer_mean(4,[3,1,8,9])
+print(c)
+
+
+print(24%4)
 
 
 

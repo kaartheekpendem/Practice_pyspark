@@ -46,7 +46,7 @@ c = Counter(m)
 print(dict(c))
 
 lst = defaultdict(list)
-
+print(f'here is the list {lst}')
 h=dict.fromkeys(v,[])
 h['a']=[2]
 h['a'].append(3)
@@ -69,3 +69,43 @@ from collections import deque
 a=deque([1,2,3,4])
 a.appendleft(6)
 print(list(a))
+
+
+a=123453
+print(int(str(a)[::-1]))
+
+
+# Parent class
+class Vehicle:
+    def start_engine(self):
+        print("Engine started")
+
+# Child class
+class Car(Vehicle):
+    def drive(self):
+        print("Car is driving")
+
+# Using the classes
+my_car = Car()
+my_car.start_engine()  # Inherited from Vehicle
+my_car.drive()         # Defined in Car
+
+
+def febi(n):
+    a=[]
+    for i in range(n):
+        if i in (0,1):
+            a.append(i)
+        else:
+            a.append(a[-1]+a[-2])
+    return a
+
+c=febi(10)
+print(c)
+
+
+a=[5,7,8,5,8,9,6,9,7,8]
+print(a.index(9))
+
+k= 'karthik'
+print(k.capitalize())

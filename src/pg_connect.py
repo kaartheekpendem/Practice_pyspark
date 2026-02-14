@@ -6,4 +6,4 @@ cur = conn.cursor()
 
 cur.execute('select * from incremental')
 
-print(cur.fetchone())
+print(cur.fetchall())

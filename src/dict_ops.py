@@ -56,13 +56,80 @@ for i in a:
 s= [(i,j) for i,j in b.items()]
 s=sorted(s,key=lambda x:x[1],reverse=True)[:3]
 print([i for i,j in s])"""
-
+"""
 a.pop(a[0])
 print(a)
 
 a={'s':1,'h':4}
 b={'t':5,'h':3}
 print(a|b)
+
+c = {'n':4,'m':6,'g':4}
+print(sorted(c.items(),key=lambda x:x[1],reverse=True))"""
+
+j={
+  "user": {
+    "id": 101,
+    "name": "Karthik",
+    "address": {
+      "city": "Fairfax",
+      "zip": "22030"
+    },
+    "skills": ["python", "aws", "redshift"]
+  }
+}
+"""
+
+def fun(j):
+    k={}
+    for i ,m in j.items():
+        if isinstance(m,dict):
+            k.update(fun(m))
+        else:
+            k[i]=m
+    return k
+
+x= fun(j)
+print(x)
+
+d=dict(zip(["a","b","c"],[1,2,3]))
+print(d)
+
+from collections import namedtuple
+
+Person = namedtuple("Person", ["name", "age"])
+p = Person("Karthik", 30)
+print(p.age)"""
+"""
+a=[1,2,3,4,5,4,3,2,2,2,2,4,5,6,7,2,3]
+c={}
+for i in a:
+    if i not in c:
+        c[i]=1
+    else:
+        c[i]+=1
+
+print(c)
+
+import random
+
+v=[random.randint(100,200) for i in range(10)]
+print(v)"""
+
+
+a=[1,2,3,4,5,4,3,2,2,2,2,4,5,6,7,2,3]
+c={}
+for i in a:
+    if i not in c:
+        c[i]=1
+    else:
+        c[i]+=1
+
+print(c)
+
+c.pop(7)
+print(c)
+
 
 
 

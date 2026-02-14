@@ -51,5 +51,17 @@ def jsonops(d : dict):
 b= jsonops(a)
 print(b)
 
+cents= 167
+quarters= cents//25
+cents=cents%25
+dimes= cents//10
+cents%=10
+
+print(cents)
+print(f'quarters: {quarters}')
+print(f'dimes: {dimes}')
+print(f'cents:{cents}')
+
+print(123%10)
 
 
