@@ -64,4 +64,4 @@ INSERT INTO employees_details (id, first_name, last_name, age, department, role,
 (2, 'Sarah', 'Johnson', 34, 'HR', 'HR Manager', 85000, '2025-01-12'),
 (3, 'David', 'Clark', 41, 'Finance', 'Financial Analyst', 92000, '2025-01-15');
 
-SELECT * FROM employees_details
+--SELECT * FROM employees_details
