@@ -22,7 +22,7 @@ class master:
 
 a = master()
 b= a.actual_func(5)
-print(b)
+print(f'encrypted :{b}')
 
 
 
@@ -36,13 +36,46 @@ class Dog(Animal):
     def speak(self):
         print("Dog barks")
 
+class Cat(Animal):
+    def speak(self):
+        print("Cat meow")
+
+a= Animal()
 
 #Polymorphism
 
 def animal_sound(animal):
     animal.speak()
 
-animal_sound(Dog())  # Output: Dog barks
+animal_sound(Animal())
+
+#Polymorphism best example
+
+class Payment:
+    def pay(self, amount):
+        print("Processing payment...")
+
+
+class CreditCard(Payment):
+    def pay(self, amount):
+        print(f"Paid {amount} using Credit Card")
+
+class PayPal(Payment):
+    def pay(self, amount):
+        print(f"Paid {amount} using PayPal")
+
+class UPI(Payment):
+    def pay(self, amount):
+        print(f"Paid {amount} using UPI")
+
+
+def process_payment(payment_method, amount):
+    payment_method.pay(amount)
+
+process_payment(CreditCard(), 100)
+process_payment(PayPal(), 200)
+process_payment(UPI(), 50)
+
 
 
 

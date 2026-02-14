@@ -7,6 +7,7 @@ for i in a:
         d[i] =1
 
 print(d)
+print(max(d))
 max_key = max(d,key=d.get)
 max_value = max(d.values())
 print(f'here it is {max_key}:{max_value}')

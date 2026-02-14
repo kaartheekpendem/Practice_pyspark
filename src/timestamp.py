@@ -9,3 +9,7 @@ print(dt.day)
 
 a= '2025-08-01'
 print(datetime.strptime(a,'%Y-%m-%d').day)
+
+dv= (datetime.now()-timedelta(2)).date().day
+print(dv)
+

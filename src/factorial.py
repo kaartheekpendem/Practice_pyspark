@@ -5,5 +5,13 @@ def fact(a):
         a=a-1
     return c
 
-b= fact(10)
-print(b)
+def main(a):
+    b= fact(a)
+    return b
+
+if __name__=="__main__":
+    a=int(input())
+    print(main(a))
+
+
+
